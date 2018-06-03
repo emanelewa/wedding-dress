@@ -31,6 +31,7 @@
 
 
 
+
 body{
     margin: 0;
     padding: 0;
@@ -41,14 +42,13 @@ body{
     background-repeat: repeat-y;
     height: auto;
     background-size: contain;
-    padding: 30px 50px;
+    padding: 30px 80px;
     overflow: hidden;
-    border: 1px solid fuchsia;
 }
 /*site******/
 .wrapper .site{
     height: auto;
-    background-color: #fbfdfb;
+    background-color: #ffffff;
     border-radius: 5px;
     overflow: hidden;
 }
@@ -56,7 +56,6 @@ body{
 .wrapper .site header{
     height: 120px;
     z-index: 999999;
-    border-top: 4px solid #d28376 ;
 }
 .wrapper .site header .menu{
     height:120px;
@@ -103,15 +102,30 @@ body{
     padding-bottom: 18px;
 }
 .wrapper .site header .menu .right ul li a:hover, .wrapper .site header .menu .right ul li a:focus{
-    color: #a54c3c;
+    color: rgba(0,0,0,0.79);
     background-image: url("../images/nav_img.png");
     background-repeat: no-repeat;
     background-position: bottom center;
 }
+/*arrow*/
+
+.wrapper .site .up{
+    bottom:0px;
+    right:15px;
+    display:none;
+    cursor:pointer;
+    position:fixed;
+    z-index:99999;
+    margin-bottom:30px;
+    color: #ad8936;
+    font-size: 50px;
+}
+
+
 
 /*slider****/
 .wrapper .site .slider{
-    height:500px;
+    height:800px;
     overflow: hidden;
 }
 
@@ -134,10 +148,10 @@ body{
     width: 100%;
     height: 100%;
     position: absolute;
-    top: 0px;
-    left: 0px;
     color: transparent;
     background-size: cover;
+    top: 0;
+    left: 0;
     background-position: 50% 50%;
     background-repeat: none;
     opacity: 0;
@@ -463,7 +477,7 @@ body{
     height: auto;
     padding: 100px 30px;
     overflow: hidden;
-    border-top: 6px solid #a54c3c ;
+    border-top: 4px solid #dbbd77 ;
 }
 .wrapper .site .welcome .title_welcome{
     margin: 0 auto;
@@ -472,11 +486,11 @@ body{
 .wrapper .site .welcome .title_welcome h1{
     font-size: 50px;
     font-family: Lucida Calligraphy;
-    color: #a54c3c;
+    color: #d8ad4a;
 }
 .wrapper .site .welcome .title_welcome p{
     font-size: 15px;
-    color: #526604;
+    color: #333333;
     font-family: Aller_Rg;
     width: 700px;
     margin: 25px auto;
@@ -491,18 +505,19 @@ body{
     overflow: hidden;
     height: auto;
     float: left;
-    margin-left: 20px;
+    margin-left: 9px;
 }
 .wrapper .site .welcome .products .item img{
     transition: all 0.5s;
 }
-.wrapper .site .welcome .products .item img:hover{
+
+.wrapper .site .welcome .products .item:hover img{
     transform: scale(0.8);
 }
 .wrapper .site .welcome .products .item h1{
     font-size: 30px;
     font-family: Lucida Calligraphy;
-    color: #a54c3c;
+    color: #d8ad4a;
     margin-top: 30px;
 }
 .wrapper .site .welcome .products .item button{
@@ -521,6 +536,7 @@ body{
 .wrapper .site .welcome .products .item button:focus{
     outline: none;
 }
+
 
 /*service***********/
 .wrapper .site .services{
@@ -552,9 +568,8 @@ body{
     height: 250px;
     border-radius: 20px;
     float: left;
-    margin-left: 64px;
+    margin-left: 39px;
     background-color:rgba(0, 0, 0, 0.5);
-    border: 1px solid #333333;
     text-align: center;
     padding: 50px 20px;
     cursor: pointer;
@@ -579,9 +594,15 @@ body{
     margin-top: 20px;
 }
 .wrapper .site .services .all_service .service:hover{
-    background-color:#a54c3c ;
+    background-color:rgba(218, 182, 97, 0.8);
 }
 .wrapper .site .services .all_service .service:hover i{
+    color: #000000;
+}
+.wrapper .site .services .all_service .service:hover p{
+    color: #000000;
+}
+.wrapper .site .services .all_service .service:hover h3{
     color: #000000;
 }
 
@@ -591,7 +612,7 @@ body{
     height: auto;
     padding: 100px 30px;
     overflow: hidden;
-    border-top: 6px solid #a54c3c ;
+    border-top: 4px solid #dbbd77 ;
 }
 .wrapper .site .dresses .title_dresses{
     text-align: center;
@@ -600,23 +621,23 @@ body{
 .wrapper .site .dresses .title_dresses h1{
     font-size: 50px;
     font-family: Lucida Calligraphy;
-    color: #a54c3c;
+    color: #d8ad4a;
 }
 .wrapper .site .dresses .all_dresses{
     height: auto;
-    margin-top: 100px;
+    margin-top: 80px;
     overflow: hidden;
 }
 
 /*slider dress***************************************************************/
 .lb-album{
-    width: 900px;
+    width: 1000px;
     margin: 0 auto;
     font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
 }
 .lb-album li{
     float: right;
-    margin: 5px;
+    margin: 15px;
     position: relative;
 }
 .lb-album li > a,
@@ -628,7 +649,7 @@ body{
     height: 150px;
     position: relative;
     padding: 10px;
-    background: #f1d2c2;
+    background: #dfc790;
     -webkit-box-shadow: 1px 1px 2px #fff, 1px 1px 2px rgba(158,111,86,0.3) inset;
     -moz-box-shadow: 1px 1px 2px #fff, 1px 1px 2px rgba(158,111,86,0.3) inset;
     box-shadow: 1px 1px 2px #fff, 1px 1px 2px rgba(158,111,86,0.3) inset;
@@ -650,13 +671,13 @@ body{
     opacity: 0;
     filter: alpha(opacity=0); /* internet explorer */
     -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=0)"; /*IE8*/
-    background: rgb(241,210,194);
-    background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,0.56) 0%, rgba(241,210,194,1) 100%);
-    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,0.56)), color-stop(100%,rgba(241,210,194,1)));
-    background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,0.56) 0%,rgba(241,210,194,1) 100%);
-    background: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,0.56) 0%,rgba(241,210,194,1) 100%);
-    background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,0.56) 0%,rgba(241,210,194,1) 100%);
-    background: radial-gradient(center, ellipse cover, rgba(255,255,255,0.56) 0%,rgba(241,210,194,1) 100%);
+    background: #dfc790;
+    background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,0.56) 0%, #dfc790 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,0.56)), color-stop(100%,#dfc790));
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,0.56) 0%,#dfc790 100%);
+    background: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,0.56) 0%,#dfc790 100%);
+    background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,0.56) 0%, #dfc790 100%);
+    background: radial-gradient(center, ellipse cover, rgba(255,255,255,0.56) 0%,#dfc790 100%);
     -webkit-transition: opacity 0.3s linear;
     -moz-transition: opacity 0.3s linear;
     -o-transition: opacity 0.3s linear;
@@ -997,7 +1018,7 @@ p.codrops-demos a.current-demo:hover{
     height: auto;
     padding: 100px 30px;
     overflow: hidden;
-    border-top: 6px solid #a54c3c ;
+    border-top: 2px solid #dbbd77 ;
 }
 .wrapper .site .BOYS_GIRLS .title{
     margin: 0 auto;
@@ -1006,15 +1027,14 @@ p.codrops-demos a.current-demo:hover{
 .wrapper .site .BOYS_GIRLS .title h1{
     font-size: 50px;
     font-family: Lucida Calligraphy;
-    color: #a54c3c;
+    color: #d8ad4a;
 }
 .wrapper .site .BOYS_GIRLS .children{
     float: left;
     height: auto;
-    width: 560px;
     overflow: hidden;
-    margin-right: 30px;
     margin-top: 100px;
+    margin-left: 30px;
 }
 .wrapper .site .BOYS_GIRLS .children:last-child{
     float: right;
@@ -1025,20 +1045,24 @@ p.codrops-demos a.current-demo:hover{
     width: 200px;
     margin-top: 100px;
     text-align: center;
+    margin-right: 14px;
 }
 .wrapper .site .BOYS_GIRLS .children .data_children h1{
     font-family: Lucida Calligraphy;
-    font-size:30px;
+    font-size:40px;
+    color:#d8ad4a ;
 }
 
 .wrapper .site .BOYS_GIRLS .children .data_children h4{
     font-family: Elsie-Regular;
     font-size:25px;
+    color:#d8ad4a ;
 }
 .wrapper .site .BOYS_GIRLS .children .data_children p{
     font-family: Aller_Rg;
     font-size:14px;
     margin-top: 15px;
+    color:#d8ad4a ;
 }
 .wrapper .site .BOYS_GIRLS .children .data_children button{
     background-repeat: no-repeat;
@@ -1060,14 +1084,17 @@ p.codrops-demos a.current-demo:hover{
 /*slider for BOYS_GIRLS**********************************************/
 .wrapper .site .BOYS_GIRLS .children .ch_dress{
     display: inline-block;
+
 }
 .wrapper .site .BOYS_GIRLS .children .hs-wrapper{
-    width: 333px;
+    width: 300px;
     height: 500px;
     position: relative;
     overflow: hidden;
     box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
     display: inline-block;
+    border: 8px solid #dbbd77;
+    border-radius: 7px;
 }
 .wrapper .site .BOYS_GIRLS .children .hs-wrapper img{
     top: 0px;
@@ -1230,53 +1257,19 @@ p.codrops-demos a.current-demo:hover{
 /*slider for BOYS_GIRLS ended**********************************************/
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*footer****/
 .wrapper .site footer{
     height: auto;
-    border: 1px solid red;
     overflow: hidden;
+    border-top: 2px solid #dbbd77 ;
 }
 .wrapper .site footer .map{
     height: 450px;
-    border: 1px solid #27ff4e;
     overflow: hidden;
 }
 .wrapper .site footer .footer_data{
-    height: 900px;
-    border: 1px solid #ff4ff9;
-    padding: 100px 30px;
+    height:auto;
+    padding: 50px 30px;
     overflow: hidden;
     background-image: url("../images/flower2.jpg");
     background-repeat: no-repeat;
@@ -1286,6 +1279,7 @@ p.codrops-demos a.current-demo:hover{
 .wrapper .site footer .footer_data .footer_title{
     text-align: center;
     height: auto;
+    margin-bottom: 80px;
 }
 .wrapper .site footer .footer_data .footer_title h1{
     font-size: 50px;
@@ -1294,14 +1288,14 @@ p.codrops-demos a.current-demo:hover{
 }
 .wrapper .site footer .footer_data .contact_us{
     background-color: rgba(0, 0, 0, 0.3);
-    height: 600px;
-    padding: 50px;
+    height: 750px;
+    padding: 50px 30px;
     margin-top: 20px;
 }
 .wrapper .site footer .footer_data .contact_us .left{
     float: left;
     height: auto;
-    width: 500px;
+    width: 460px;
 }
 .wrapper .site footer .footer_data .contact_us .left .block{
     float: left;
@@ -1309,6 +1303,12 @@ p.codrops-demos a.current-demo:hover{
     text-align: center;
     margin-bottom: 30px;
     width: 200px;
+}
+.wrapper .site footer .footer_data .contact_us .left .block:hover .icon{
+    background-color:#d8ad4a;
+}
+.wrapper .site footer .footer_data .contact_us .left .block:hover .icon i{
+    color:#ffffff ;
 }
 .wrapper .site footer .footer_data .contact_us .left .block:nth-child(even){
     float: right;
@@ -1323,12 +1323,9 @@ p.codrops-demos a.current-demo:hover{
     transition: all 0.5s;
     margin-bottom: 30px;
 }
-.wrapper .site footer .footer_data .contact_us .left .block .icon:hover {
-    background-color:#d8ad4a;
-    color: white;
-}
 .wrapper .site footer .footer_data .contact_us .left .block .icon i{
     margin-top: 15px;
+    color:#d8ad4a ;
 }
 .wrapper .site footer .footer_data .contact_us .left .block h3{
     color: white;
@@ -1355,14 +1352,15 @@ p.codrops-demos a.current-demo:hover{
 }
 .wrapper .site footer .footer_data .contact_us .right input:focus, .wrapper .site footer .footer_data .contact_us .right input:hover{
     outline: none;
-    border: 2px solid #a54c3c ;
+    border: 2px solid #d8ad4a ;
 }
 .wrapper .site footer .footer_data .contact_us .right input[type="submit"]{
     padding: 20px;
     background:#ffffff;
     border: 2px solid #ffffff;
+    border-radius: 5px;
     width:545px;
-    color: #a54c3c;
+    color: #d8ad4a;
     font-family: Elsie-Regular;
     font-size: 19px;
     margin-top: 20px;
@@ -1386,7 +1384,7 @@ p.codrops-demos a.current-demo:hover{
 }
 .wrapper .site footer .footer_data .contact_us .right textarea:focus, .wrapper .site footer .footer_data .contact_us .right textarea:hover{
     outline: none;
-    border: 2px solid #a54c3c ;
+    border: 2px solid #d8ad4a ;
 }
 .wrapper .site footer .footer_data .contact_us .right textarea::placeholder{
     color:  #ffffff;

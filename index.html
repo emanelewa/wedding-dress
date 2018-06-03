@@ -8,8 +8,6 @@
     <link rel="stylesheet" type="text/css" href="css/demo.css" />
     <link rel="stylesheet" type="text/css" href="css/style2.css" />
 
-    <!--slider for BOYS_GIRLS-->
-
     <!--project css-->
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -21,6 +19,8 @@
     <section class="wrapper">
         <!--site started-->
         <section class="site">
+            <!--arrow up-->
+            <i class="fa fa-pulse fa-snowflake-o up fa-3x"></i>
             <!--header started-->
             <header>
                 <!--menu started-->
@@ -31,16 +31,17 @@
                     </div>
                     <div class="right">
                         <ul>
-                            <li><a href="#">HOME</a></li>
-                            <li><a href="#">ABOUT US</a></li>
-                            <li><a href="#">SERVICES</a></li>
-                            <li><a href="#">DRESSES</a></li>
-                            <li><a href="#">BOYS & GIRLS</a></li>
-                            <li><a href="#">CONTACT</a></li>
+                            <li><a href="#" data-value="home">HOME</a></li>
+                            <li><a href="#" data-value="about">ABOUT US</a></li>
+                            <li><a href="#" data-value="service">SERVICES</a></li>
+                            <li><a href="#" data-value="dress">DRESSES</a></li>
+                            <li><a href="#" data-value="boys_girls">BOYS & GIRLS</a></li>
+                            <li><a href="#" data-value="contact">CONTACT</a></li>
                         </ul>
                     </div>
                 </article><!--menu ended-->
             </header><!--header ended-->
+
             <!--slider started-->
             <article class="slider" id="page">
                 <ul class="cb-slideshow">
@@ -53,7 +54,7 @@
                 </ul>
             </article><!--slider ended-->
             <!--welcome started-->
-            <section class="welcome">
+            <section class="welcome" id="about">
                 <article class="title_welcome">
                     <h1>WELCOME</h1>
                     <img src="images/img_title.png">
@@ -87,7 +88,7 @@
             </section><!--welcome ended-->
 
             <!--service started-->
-            <section class="services">
+            <section class="services" id="service">
                 <div class="title_services">
                     <h1>SERVICES</h1>
                     <img src="images/img_title2.png">
@@ -113,7 +114,7 @@
             </section><!--service ended-->
 
             <!--dresses started-->
-            <section class="dresses">
+            <section class="dresses" id="dress">
                 <div class="title_dresses">
                     <h1>DRESSES</h1>
                     <img src="images/img_title.png">
@@ -269,7 +270,7 @@
             </section><!--dresses ended-->
 
             <!--BOYS_GIRLS started-->
-            <section class="BOYS_GIRLS">
+            <section class="BOYS_GIRLS" id="boys_girls">
                 <div class="title">
                     <h1>BOYS & GIRLS</h1>
                     <img src="images/img_title.png">
@@ -322,16 +323,17 @@
                 </article>
             </section><!--BOYS_GIRLS ended-->
             <!--footer-->
-            <footer>
+            <footer id="contact">
                 <article class="map">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13813.245269672967!2d31.338862379722926!3d30.05660961004352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583e5d94c66301%3A0xddddf100de42206c!2z2YXYr9mK2YbZhyDZhti12LHYjCDYp9mE2YXZhti32YLYqSDYp9mE2KPZiNmE2YnYjCDZhdiv2YrZhtipINmG2LXYsdiMINmF2K3Yp9mB2LjYqSDYp9mE2YLYp9mH2LHYqeKArA!5e0!3m2!1sar!2seg!4v1527691373023" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </article>
               <article class="footer_data">
+                  <div class="contact_us">
                   <div class="footer_title">
                     <h1>CONTACT</h1>
                       <img src="images/img_title2.png">
                   </div>
-                  <div class="contact_us">
+
                     <div class="left">
                         <div class="block">
                             <div class="icon"><i class="fa fa-map-marker fa-3x"></i></div>
@@ -341,7 +343,7 @@
 
                         <div class="block">
                             <div class="icon"><i class="fa fa-phone fa-3x"></i>
-                                </i></div>
+                                </div>
                             <h3>Phone</h3>
                             <p>+(000) 123 4565 32<br>
                                 +(010) 123 4565 35</p>
@@ -362,10 +364,10 @@
 
                   <div class="right">
                       <form>
-                          <input type="text" placeholder="Your Name"><br>
-                          <input type="email" placeholder="Your Email"><br>
-                          <input type="password" placeholder="Your Password"><br>
-                          <textarea placeholder="Your Message" rows="10" cols="10"></textarea><br>
+                          <input type="text" placeholder="Your Name" required><br>
+                          <input type="email" placeholder="Your Email" required><br>
+                          <input type="password" placeholder="Your Password" required><br>
+                          <textarea placeholder="Your Message" rows="10" cols="10" required></textarea><br>
                           <input type="submit" value="SEND">
                       </form>
                   </div>
@@ -375,6 +377,8 @@
         </section><!--site ended-->
     </section><!--wrapper ended-->
 
+
+    <script src="js/jquery-3.2.1.min.js"></script>
     <!--js slider-->
     <script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
     <!--js website-->
